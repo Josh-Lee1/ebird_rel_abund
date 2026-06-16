@@ -1,6 +1,11 @@
 # =============================================================================
 # System & R session files
 # =============================================================================
+# Zenodo upload zip (too large for GitHub — upload manually to Zenodo)
+zenodo_upload/*.zip
+zenodo_upload/*.tif
+zenodo_upload/*.csv
+
 .DS_Store
 ._*
 Rplots.pdf

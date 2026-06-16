@@ -1,5 +1,7 @@
 # Vegetation Functional Diversity and Bird Abundance in New South Wales
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
 **How do vegetation functional diversity, functional identity, structural complexity and taxonomic diversity explain bird relative abundance across NSW, Australia?**
 
 This repository contains the data, R code, and results for a study that models the relative abundance of 213 native terrestrial bird species across New South Wales (NSW), Australia, and uses drop-term cross-validation to partition the unique explanatory power of four vegetation variable groups: functional diversity (FD), functional identity (CWM traits), vegetation structure, and plant taxonomic diversity.
@@ -66,7 +68,10 @@ bird_FD_ebirdabund/
 ├── nsw_species_list.csv          # Species list with reporting rates
 ├── run_plot_batch_500m_inference.R  # Main GAM fitting batch runner
 ├── config_500m_inference.yaml    # Configuration for the inference run
-└── botw_name_aliases.csv         # eBird–BirdLife taxonomy alias map
+├── botw_name_aliases.csv         # eBird–BirdLife taxonomy alias map
+└── zenodo_upload/                # Files prepared for Zenodo deposit
+    ├── README.md                 # Zenodo data description
+    └── models_500m_inference.zip # 213 fitted GAM objects (~806 MB)
 ```
 
 ---
@@ -85,6 +90,22 @@ The four final publication figures are produced by the scripts listed, reading f
 ---
 
 ## Data Requirements
+
+### 🗄️ Large data files — available on Zenodo
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
+Data files too large for GitHub are archived on Zenodo at:
+**https://doi.org/10.5281/zenodo.XXXXXXX**
+
+| File | Size | Description |
+|------|------|-------------|
+| `models_500m_inference.zip` | ~806 MB | 213 fitted GAM objects (`.rds`), one per species |
+| `cleaned_benchmark_data.csv` | ~518 MB | NSW VIS floristic plot census records (cover scores per species per plot) |
+| `nsw_abundance_stack_3km.tif` | ~145 MB | Multi-band raster: relative abundance predictions for all species at 3 km |
+| `nsw_abundance_se_stack_3km.tif` | ~136 MB | Multi-band raster: standard errors of abundance predictions |
+
+See `zenodo_upload/README.md` in this repository for full descriptions of each file.
 
 ### ✅ Included in this repository
 | File | Description | Size |
@@ -115,16 +136,10 @@ These files are not redistributable under the eBird data use policy.
 
 | File | Reason not included |
 |------|---------------------|
-| `data/cleaned_benchmark_data.csv` (~520 MB) | Floristic plot raw census data — too large for GitHub; contact lead author |
 | `data/botw_species/BOTW_2025.gpkg` | BirdLife range polygons — licence-restricted; contact lead author |
-| `results_500m_inference/models/*.rds` | Fitted GAM objects, 213 files, ~850 MB total — see below |
 
 ### 🔄 Fitted model files
-The 213 fitted GAM `.rds` files (~4 MB each, ~850 MB total) cannot be hosted on GitHub due to file-size limits. They can be:
-- **Reproduced** by running the pipeline (Step 3 below) — requires ~24–48 h of compute on 6 cores.
-- **Archived** on a data repository (e.g. Zenodo, OSF) — contact the lead author if you need pre-fitted models without re-running.
-
-> **Note:** RDS files are already gzip-compressed by R internally; additional ZIP compression yields negligible size reduction.
+The 213 fitted GAM objects are available as `models_500m_inference.zip` from the **Zenodo record** linked above. They can also be reproduced by running Step 3 of the pipeline (~24–48 h on 6 cores).
 
 ---
 
