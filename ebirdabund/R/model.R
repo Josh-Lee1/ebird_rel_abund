@@ -5,7 +5,7 @@ safe_k <- function(x, default_k) {
   as.integer(min(default_k, max(3L, n_uniq - 1L)))
 }
 # Build a GAM formula with data-driven k for each smooth term.
-build_gam_formula <- function(df, hab_cols, simple = FALSE) {
+build_gam_formula <- function(df, hab_cols, simple = FALSE, extra_smooth_cols = NULL) {
   sk <- function(var, k) safe_k(df[[var]], k)
 
   if (isTRUE(simple)) {
@@ -61,30 +61,51 @@ build_gam_formula <- function(df, hab_cols, simple = FALSE) {
   # knots are distributed more evenly across the data.
   log1p_cols <- c("pop_density", "tree_height", "nightlights")  # include zeros
   log_cols   <- "precip_annual"                                 # strictly positive
-  k6_cols    <- c("elevation", "precip_annual", "temp_annual")
 
   hab_terms <- vapply(hab_cols, function(col) {
     var <- if (col %in% log1p_cols) sprintf("log1p(%s)", col)
            else if (col %in% log_cols) sprintf("log(%s)", col)
            else col
-    k   <- if (isTRUE(simple)) 3L else if (col %in% k6_cols) 6L else 4L
+    k   <- if (isTRUE(simple)) 3L else 10L
     sprintf("s(%s, k = %d)", var, safe_k(df[[col]], k))
   }, character(1))
 
+  # Extra smooth terms (e.g. CWM vegetation metrics from floristic plots).
+  # No log transforms — these values are already on standardised scales.
+  extra_terms <- character(0)
+  if (!is.null(extra_smooth_cols)) {
+    for (col in extra_smooth_cols) {
+      if (!col %in% names(df)) {
+        warning(sprintf("extra_smooth_cols: '%s' not found in data, skipping.", col))
+        next
+      }
+      n_uniq <- length(unique(stats::na.omit(df[[col]])))
+      if (n_uniq < 4L) {
+        warning(sprintf(
+          "extra_smooth_cols: '%s' has only %d unique non-NA values (need >= 4), skipping.",
+          col, n_uniq
+        ))
+        next
+      }
+      extra_terms <- c(extra_terms,
+                       sprintf("s(%s, k = %d)", col, safe_k(df[[col]], 4L)))
+    }
+  }
+
   stats::as.formula(
     paste("observation_count ~",
-          paste(c(effort_terms, hab_terms), collapse = " + "))
+          paste(c(effort_terms, hab_terms, extra_terms), collapse = " + "))
   )
 }
 
 # Fit a negative-binomial GAM to training data.
 # Returns the fitted mgcv::gam object.
-fit_gam <- function(df) {
+fit_gam <- function(df, extra_smooth_cols = NULL) {
   hab_cols <- grep(
     "^(lc_|elevation|precip_|temp_|pop_|water_|clay|tree_height|nightlights|palsar_hv)",
     names(df), value = TRUE
   )
-  hab_cols <- setdiff(hab_cols, "lc_shrubs")
+  hab_cols <- setdiff(hab_cols, c("lc_shrubs", "palsar_hv", "clay", "lc_grassland", "lc_cropland", "lc_built", "pop_density", "tree_height"))
 
   if (length(hab_cols) == 0) {
     stop("No habitat covariate columns found (expected lc_*, ",
@@ -96,8 +117,8 @@ fit_gam <- function(df) {
     length(unique(stats::na.omit(df[[col]]))) >= 4L
   }, logical(1))]
 
-  full_formula <- build_gam_formula(df, hab_cols)
-  simple_formula <- build_gam_formula(df, hab_cols, simple = TRUE)
+  full_formula <- build_gam_formula(df, hab_cols, extra_smooth_cols = extra_smooth_cols)
+  simple_formula <- build_gam_formula(df, hab_cols, simple = TRUE, extra_smooth_cols = extra_smooth_cols)
 
   # Set "Traveling Count" as reference level when present, else most common
   protocols <- levels(df$protocol_type)
@@ -110,24 +131,19 @@ fit_gam <- function(df) {
 
   message("Fitting negative-binomial GAM (", nrow(df), " checklists)...")
 
-  # Drop gamma first (theta-MLE NaN in irruption-flock species fixes by
-  # lowering the penalty), then drop select. If the full formula is still
-  # ill-conditioned, fall back to a smaller core-habitat formula before using
-  # the slower non-discrete optimizer.
-  gamma_bic <- log(nrow(df)) / 2
+  # For inference, we use lower gamma penalties (1.0 or 1.4) to avoid
+  # over-shrinking important but subtle covariates, while maintaining select=TRUE.
   attempts <- list(
-    list(formula = full_formula, gamma = gamma_bic, select = TRUE,  discrete = TRUE,
-         label = sprintf("gamma=%.2f (BIC)", gamma_bic)),
-    list(formula = full_formula, gamma = 2.0,       select = TRUE,  discrete = TRUE,
-         label = "gamma=2.0"),
-    list(formula = full_formula, gamma = 1.4,       select = TRUE,  discrete = TRUE,
-         label = "gamma=1.4"),
-    list(formula = full_formula, gamma = 1.4,       select = FALSE, discrete = TRUE,
-         label = "gamma=1.4, select=FALSE"),
-    list(formula = simple_formula, gamma = 1.4,     select = FALSE, discrete = TRUE,
-         label = "simplified formula, gamma=1.4, select=FALSE"),
-    list(formula = simple_formula, gamma = 1.4,     select = FALSE, discrete = FALSE,
-         label = "simplified formula, gamma=1.4, discrete=FALSE")
+    list(formula = full_formula, gamma = 1.0, select = TRUE,  discrete = TRUE,
+         label = "gamma=1.0, select=TRUE"),
+    list(formula = full_formula, gamma = 1.4, select = TRUE,  discrete = TRUE,
+         label = "gamma=1.4, select=TRUE"),
+    list(formula = full_formula, gamma = 1.0, select = FALSE, discrete = TRUE,
+         label = "gamma=1.0, select=FALSE"),
+    list(formula = simple_formula, gamma = 1.0, select = FALSE, discrete = TRUE,
+         label = "simplified formula, gamma=1.0, select=FALSE"),
+    list(formula = simple_formula, gamma = 1.0, select = FALSE, discrete = FALSE,
+         label = "simplified formula, gamma=1.0, discrete=FALSE")
   )
 
   fit_bam <- function(formula_, gamma_val, select_, discrete_) {

@@ -1,0 +1,61 @@
+# eBird Relative Abundance Pipeline Configuration
+# 500m Plot Buffer Inference Run
+region: NSW
+description: NSW + 100 km buffer — 500 m plot buffer INFERENCE run (filtered species, parallel)
+
+raw_data: data
+ebd_files:
+  - ebd_AU-NSW_unv_smp_relFeb-2026/ebd_AU-NSW_unv_smp_relFeb-2026.txt
+  - ebd_AU-ACT_unv_smp_relMar-2026/ebd_AU-ACT_unv_smp_relMar-2026.txt
+  - ebd_AU-VIC_unv_smp_relMar-2026/ebd_AU-VIC_unv_smp_relMar-2026.txt
+  - ebd_AU-QLD_unv_smp_relMar-2026/ebd_AU-QLD_unv_smp_relMar-2026.txt
+  - ebd_AU-SA_unv_smp_relMar-2026/ebd_AU-SA_unv_smp_relMar-2026.txt
+
+sampling_files:
+  - ebd_AU-NSW_unv_smp_relFeb-2026/ebd_AU-NSW_unv_smp_relFeb-2026_sampling.txt
+  - ebd_AU-ACT_unv_smp_relMar-2026/ebd_AU-ACT_unv_smp_relMar-2026_sampling.txt
+  - ebd_AU-VIC_unv_smp_relMar-2026/ebd_AU-VIC_unv_smp_relMar-2026_sampling.txt
+  - ebd_AU-QLD_unv_smp_relMar-2026/ebd_AU-QLD_unv_smp_relMar-2026_sampling.txt
+  - ebd_AU-SA_unv_smp_relMar-2026/ebd_AU-SA_unv_smp_relMar-2026_sampling.txt
+
+species_list_file: nsw_species_list.csv
+taxonomy_file: data/nsw_ebird_taxonomy.csv
+
+covariate_cache: ebirdabund_cache
+zerofill_cache: ebirdabund_cache_nsw_buffer
+
+output_dir: species_maps
+log_file: batch_nsw_log.csv
+botw_path: data/botw_species/BOTW_2025.gpkg
+
+grid_resolutions_km:
+  - 3
+  - 9
+
+reporting_rate_threshold: 0.005
+n_cores: 6
+
+study_polygon:
+  country: AUS
+  region: New South Wales
+  buffer_metres: 100000
+  proj_processing: 3577
+  proj_output: 4326
+
+plot_data:
+  file: data/bench_GEDI_struct_metrics_enriched.csv
+  cwm_file: data/cleaned_veg_w_fd.csv
+  buffer_m: 500
+  variables:
+    - FRic
+    - FEve
+    - FDiv
+    - sp_richness
+    - pielou_evenness
+    - gini_simpson
+    - cover
+    - mean_fhd
+    - prop_canopy
+    - wooddensity_cwm
+    - LA_cwm
+    - height_cwm

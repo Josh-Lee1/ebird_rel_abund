@@ -402,8 +402,20 @@ load_ebird <- function(polygon, ebird_zip, sampling_txt, species, cache_dir,
     saveRDS(zf, cache_f)
   }
 
+  # If master_f exists, we must merge covariates from it (fast-path logic),
+  # because zf from cache_f or read_sampling lacks them.
+  if (file.exists(master_f)) {
+    master <- readRDS(master_f)
+    obs <- zf[, c("checklist_id", "observation_count"), drop = FALSE]
+    zf <- merge(master, obs, by = "checklist_id", all.x = TRUE)
+    zf$observation_count[is.na(zf$observation_count)] <- "0"
+    zf$species_observed <- zf$observation_count != "0"
+    # Note: we skip attach_observer_expertise since master already has it
+  } else {
+    zf <- attach_observer_expertise(zf, cache_dir)
+  }
+
   zf <- clean_ebird(zf, max_count = max_count)
-  zf <- attach_observer_expertise(zf, cache_dir)
 
   if (nrow(zf) == 0) {
     stop(
@@ -451,4 +463,34 @@ resolve_ebird_path <- function(ebird_path) {
     "  unzip ", ebird_path, " -d ", zip_dir, "\n",
     "Or pass the .txt path directly to ebird_zip."
   )
+}
+
+# Wrapper around load_ebird() that restricts to checklists intersecting
+# floristic plots and attaches plot vegetation metrics.
+#' @export
+load_ebird_with_plots <- function(polygon, ebird_zip, sampling_txt, species,
+                                   cache_dir, plots_buffered, plot_vars,
+                                   max_count = 200L) {
+  df <- load_ebird(polygon, ebird_zip, sampling_txt, species, cache_dir,
+                   max_count = max_count)
+
+  intersection_df <- intersect_checklists_with_plots(df, plots_buffered, plot_vars)
+
+  plot_cols <- setdiff(names(intersection_df), names(df))
+  join_cols <- c("checklist_id", plot_cols)
+  join_df <- intersection_df[, intersect(join_cols, names(intersection_df)),
+                              drop = FALSE]
+  join_df <- join_df[!duplicated(join_df$checklist_id), ]
+
+  n_before <- nrow(df)
+  df <- merge(df, join_df, by = "checklist_id")
+  message(sprintf(
+    "  Plot intersection: %d -> %d checklists (%.1f%% of total).",
+    n_before, nrow(df), nrow(df) / max(n_before, 1) * 100
+  ))
+
+  if (nrow(df) == 0L) {
+    stop("No checklists remain after plot intersection for '", species, "'.")
+  }
+  df
 }

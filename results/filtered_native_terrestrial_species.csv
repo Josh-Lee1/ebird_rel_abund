@@ -1,0 +1,239 @@
+"species","deviance_explained","max_edf","scientific_name","Order","population_desc","in_traits"
+"Torresian Kingfisher",0.898,2.09,"Todiramphus sordidus","Coraciiformes","Unknown",TRUE
+"Albert's Lyrebird",0.824,1.23,"Menura alberti","Passeriformes","Endemic (entirely Australian)",TRUE
+"Olive Whistler",0.748,0.94,"Pachycephala olivacea","Passeriformes","Endemic (entirely Australian)",TRUE
+"Indian Peafowl",0.6856,1.68,"Pavo cristatus","Galliformes","Introduced",TRUE
+"Rufous Scrub-bird",0.8366,1.22,"Atrichornis rufescens","Passeriformes","Endemic (entirely Australian)",TRUE
+"Red-tailed Black-Cockatoo",0.9752,1.04,"Calyptorhynchus banksii","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Sooty Owl",0.6391,3.04,"Tyto tenebricosa","Strigiformes","Endemic (entirely Australian)",TRUE
+"Pacific Swift",0.4828,2.42,"Apus pacificus","Caprimulgiformes","Non-breeding migrant",TRUE
+"Satin Flycatcher",0.4216,2.14,"Myiagra cyanoleuca","Passeriformes","Endemic (breeding only)",TRUE
+"Brush Bronzewing",0.5144,1.6,"Phaps elegans","Columbiformes","Endemic (entirely Australian)",TRUE
+"White-throated Honeyeater",0.8102,2.19,"Melithreptus albogularis","Passeriformes","Australian",TRUE
+"Swift Parrot",0.6935,2.47,"Lathamus discolor","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Pale-headed Rosella",0.6593,1.07,"Platycercus adscitus","Psittaciformes","Endemic (entirely Australian)",TRUE
+"White-throated Nightjar",0.6952,3.14,"Eurostopodus mystacalis","Caprimulgiformes","Australian",TRUE
+"Black-chinned Honeyeater",0.6774,2.18,"Melithreptus gularis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Crescent Honeyeater",0.7088,2.42,"Phylidonyris pyrrhopterus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Spotted Quail-thrush",0.4951,2.23,"Cinclosoma punctatum","Passeriformes","Endemic (entirely Australian)",TRUE
+"Paradise Riflebird",0.7605,1.54,"Ptiloris paradiseus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Gray Currawong",0.5699,2.35,"Strepera versicolor","Passeriformes","Endemic (entirely Australian)",TRUE
+"Plum-headed Finch",0.8444,2.05,"Emblema modestum","Passeriformes","Endemic (entirely Australian)",TRUE
+"Diamond Dove",0.8343,1.6,"Geopelia cuneata","Columbiformes","Endemic (entirely Australian)",TRUE
+"White-fronted Honeyeater",0.9199,1.81,"Purnella albifrons","Passeriformes","Endemic (entirely Australian)",TRUE
+"Chestnut-rumped Heathwren",0.4945,1.74,"Hylacola pyrrhopygia","Passeriformes","Endemic (entirely Australian)",TRUE
+"Russet-tailed Thrush",0.7242,1.89,"Zoothera heinei","Passeriformes","Australian",TRUE
+"Forest Kingfisher",0.6168,1.66,"Todiramphus macleayii","Coraciiformes","Australian",TRUE
+"Little Crow",0.9191,2.34,"Corvus bennetti","Passeriformes","Endemic (entirely Australian)",TRUE
+"Turquoise Parrot",0.7656,2.33,"Neophema pulchella","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Tawny-crowned Honeyeater",0.7797,1.62,"Gliciphila melanops","Passeriformes","Endemic (entirely Australian)",TRUE
+"Pilotbird",0.6606,2.19,"Pycnoptilus floccosus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Spotted Bowerbird",0.713,1.8,"Chlamydera maculata","Passeriformes","Endemic (entirely Australian)",TRUE
+"Beautiful Firetail",0.6988,2.08,"Stagonopleura bella","Passeriformes","Endemic (entirely Australian)",TRUE
+"Eurasian Skylark",0.773,1.42,"Alauda arvensis","Passeriformes","Introduced",TRUE
+"Eastern Bristlebird",0.8835,1.82,"Dasyornis brachypterus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Mulga Parrot",0.8598,1.95,"Psephotellus varius","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Splendid Fairywren",0.9163,1.95,"Malurus splendens","Passeriformes","Endemic (entirely Australian)",TRUE
+"Pale-yellow Robin",0.7967,1.98,"Eopsaltria capito","Passeriformes","Endemic (entirely Australian)",TRUE
+"Hooded Robin",0.6769,2.11,"Melanodryas cucullata","Passeriformes","Endemic (entirely Australian)",TRUE
+"Stubble Quail",0.7478,1.59,"Coturnix pectoralis","Galliformes","Endemic (entirely Australian)",TRUE
+"Flame Robin",0.7155,2.85,"Petroica phoenicea","Passeriformes","Endemic (entirely Australian)",TRUE
+"Pacific Baza",0.2695,1.53,"Aviceda subcristata","Accipitriformes","Australian",TRUE
+"Budgerigar",0.9063,1.55,"Melopsittacus undulatus","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Red-winged Parrot",0.7803,2.49,"Aprosmictus erythropterus","Psittaciformes","Australian",TRUE
+"Rockwarbler",0.5928,2.48,"Origma solitaria","Passeriformes","Endemic (entirely Australian)",TRUE
+"Crested Bellbird",0.7585,1.89,"Oreoica gutturalis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Masked Woodswallow",0.7745,3.24,"Artamus personatus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Square-tailed Kite",0.0912,1.36,"Lophoictinia isura","Accipitriformes","Endemic (entirely Australian)",TRUE
+"White-fronted Chat",0.7126,1.44,"Epthianura albifrons","Passeriformes","Endemic (entirely Australian)",TRUE
+"Rose-crowned Fruit-Dove",0.7542,2.43,"Ptilinopus regina","Columbiformes","Australian",TRUE
+"Pallid Cuckoo",0.391,2.89,"Heteroscenes pallidus","Cuculiformes","Endemic (breeding only)",TRUE
+"Little Eagle",0.2392,1.62,"Hieraaetus morphnoides","Accipitriformes","Endemic (entirely Australian)",TRUE
+"Brown Songlark",0.6494,1.78,"Cincloramphus cruralis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Red-browed Treecreeper",0.6008,2.44,"Climacteris erythrops","Passeriformes","Endemic (entirely Australian)",TRUE
+"Rufous Shrikethrush",0.6501,2.64,"Colluricincla megarhyncha","Passeriformes","Australian",TRUE
+"Chestnut-breasted Munia",0.6635,1.69,"Lonchura castaneothorax","Passeriformes","Australian",TRUE
+"Southern Whiteface",0.8514,2.28,"Aphelocephala leucopsis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Mangrove Gerygone",0.7098,1.87,"Gerygone levigaster","Passeriformes","Australian",TRUE
+"Glossy Black-Cockatoo",0.2284,1.57,"Calyptorhynchus lathami","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Inland Thornbill",0.7906,2.09,"Acanthiza apicalis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Pacific Emerald Dove",0.4829,1.53,"Chalcophaps longirostris","Columbiformes","Australian",TRUE
+"Wompoo Fruit-Dove",0.7891,2.19,"Megaloprepia magnifica","Columbiformes","Australian",TRUE
+"Australian Spectacled Monarch",0.7045,2.82,"Symposiachrus trivirgatus","Passeriformes","Unknown",TRUE
+"Superb Parrot",0.7763,2.07,"Polytelis swainsonii","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Powerful Owl",0.4614,3.37,"Ninox strenua","Strigiformes","Endemic (entirely Australian)",TRUE
+"Noisy Pitta",0.5293,2.39,"Pitta versicolor","Passeriformes","Australian",TRUE
+"Greater Bluebonnet",0.8496,0.95,"Northiella haematogaster","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Diamond Firetail",0.7339,2.36,"Stagonopleura guttata","Passeriformes","Endemic (entirely Australian)",TRUE
+"Southern Emuwren",0.6513,3.73,"Stipiturus malachurus","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-browed Babbler",0.8141,2.82,"Pomatostomus superciliosus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Chestnut-rumped Thornbill",0.8395,2.79,"Acanthiza uropygialis","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-winged Fairywren",0.8363,1.79,"Malurus leucopterus","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-browed Woodswallow",0.7563,3.97,"Artamus superciliosus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Forest Raven",0.6608,2.53,"Corvus tasmanicus","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-bellied Cuckooshrike",0.4331,4.74,"Coracina papuensis","Passeriformes","Australian",TRUE
+"Emu",0.7264,2.25,"Dromaius novaehollandiae","Struthioniformes","Endemic (entirely Australian)",TRUE
+"Australian Boobook",0.4915,4.68,"Ninox boobook","Strigiformes","Australian",TRUE
+"Scarlet Robin",0.561,2.69,"Petroica boodang","Passeriformes","Australian",TRUE
+"Bassian Thrush",0.53,2.19,"Zoothera lunulata","Passeriformes","Endemic (entirely Australian)",TRUE
+"Collared Sparrowhawk",0.1028,1.59,"Tachyspiza cirrocephala","Accipitriformes","Australian",TRUE
+"Cockatiel",0.8316,2.46,"Nymphicus hollandicus","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Western Gerygone",0.6543,2.62,"Gerygone fusca","Passeriformes","Endemic (entirely Australian)",TRUE
+"Regent Bowerbird",0.6049,2.29,"Sericulus chrysocephalus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Gang-gang Cockatoo",0.5695,2.83,"Callocephalon fimbriatum","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Australian Logrunner",0.7543,2.21,"Orthonyx temminckii","Passeriformes","Endemic (entirely Australian)",TRUE
+"Varied Triller",0.6216,1.7,"Lalage leucomela","Passeriformes","Australian",TRUE
+"Purple-backed Fairywren",0.7317,2.3,"Malurus assimilis","Passeriformes","Unknown",TRUE
+"Speckled Warbler",0.692,2.8,"Pyrrholaemus sagittatus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Peregrine Falcon",0.1297,2.26,"Falco peregrinus","Falconiformes","Australian",TRUE
+"Gray Goshawk",0.177,1.81,"Tachyspiza novaehollandiae","Accipitriformes","Unknown",TRUE
+"Red-backed Fairywren",0.7651,2.29,"Malurus melanocephalus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Australian Owlet-nightjar",0.4637,4.26,"Aegotheles cristatus","Caprimulgiformes","Endemic (entirely Australian)",TRUE
+"Yellow-tufted Honeyeater",0.6942,2.89,"Lichenostomus melanops","Passeriformes","Endemic (entirely Australian)",TRUE
+"Horsfield's Bronze-Cuckoo",0.3274,2.93,"Chalcites basalis","Cuculiformes","Endemic (breeding only)",TRUE
+"Sahul Brush Cuckoo",0.366,3.89,"Cacomantis variolosus","Cuculiformes","Australian",TRUE
+"Pheasant Coucal",0.5064,2.95,"Centropus phasianinus","Cuculiformes","Australian",TRUE
+"Gray-crowned Babbler",0.7377,2.85,"Pomatostomus temporalis","Passeriformes","Australian",TRUE
+"Red-capped Robin",0.7158,2.87,"Petroica goodenovii","Passeriformes","Endemic (entirely Australian)",TRUE
+"Fuscous Honeyeater",0.7391,3.52,"Ptilotula fusca","Passeriformes","Endemic (entirely Australian)",TRUE
+"Australian Hobby",0.1553,1.39,"Falco longipennis","Falconiformes","Australian",TRUE
+"Varied Sittella",0.3451,2.57,"Daphoenositta chrysoptera","Passeriformes","Endemic (entirely Australian)",TRUE
+"Brahminy Kite",0.589,1.95,"Haliastur indus","Accipitriformes","Australian",TRUE
+"White-throated Needletail",0.5333,4.57,"Hirundapus caudacutus","Caprimulgiformes","Non-breeding migrant",TRUE
+"White-winged Triller",0.5616,3.55,"Lalage tricolor","Passeriformes","Australian",TRUE
+"Australian Ringneck",0.8272,1.95,"Barnardius zonarius","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Zebra Finch",0.6817,2.42,"Taeniopygia guttata","Passeriformes","Australian",TRUE
+"Brown Falcon",0.3559,1.28,"Falco berigora","Falconiformes","Australian",TRUE
+"Little Lorikeet",0.5044,3.22,"Psitteuteles pusillus","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Singing Honeyeater",0.7118,2.16,"Gavicalis virescens","Passeriformes","Endemic (entirely Australian)",TRUE
+"Sahul Cicadabird",0.464,4.75,"Edolisoma tenuirostre","Passeriformes","Unknown",TRUE
+"Eastern Shrike-tit",0.3482,2.34,"Falcunculus frontatus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Rose Robin",0.3566,4.24,"Petroica rosea","Passeriformes","Endemic (entirely Australian)",TRUE
+"Black Kite",0.8307,2.94,"Milvus migrans","Accipitriformes","Australian",TRUE
+"European Goldfinch",0.6854,2.4,"Carduelis carduelis","Passeriformes","Introduced",TRUE
+"Yellow-throated Miner",0.8602,2.43,"Manorina flavigula","Passeriformes","Endemic (entirely Australian)",TRUE
+"Azure Kingfisher",0.2832,3.74,"Ceyx azureus","Coraciiformes","Australian",TRUE
+"Yellow-throated Scrubwren",0.6932,3.15,"Neosericornis citreogularis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Brown-headed Honeyeater",0.4685,2.7,"Melithreptus brevirostris","Passeriformes","Endemic (entirely Australian)",TRUE
+"Brown Quail",0.2919,1.8,"Synoicus ypsilophorus","Galliformes","Australian",TRUE
+"Rufous Songlark",0.6845,3.62,"Cincloramphus mathewsi","Passeriformes","Endemic (entirely Australian)",TRUE
+"Buff-rumped Thornbill",0.6224,3.39,"Acanthiza reguloides","Passeriformes","Endemic (entirely Australian)",TRUE
+"Tawny Grassbird",0.6159,3.1,"Cincloramphus timoriensis","Passeriformes","Australian",TRUE
+"Little Friarbird",0.6407,2.03,"Philemon citreogularis","Passeriformes","Australian",TRUE
+"Topknot Pigeon",0.388,2.54,"Lopholaimus antarcticus","Columbiformes","Endemic (entirely Australian)",TRUE
+"Apostlebird",0.8175,3.17,"Struthidea cinerea","Passeriformes","Endemic (entirely Australian)",TRUE
+"Brown Treecreeper",0.7565,4.04,"Climacteris picumnus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Spangled Drongo",0.5517,3.12,"Dicrurus bracteatus","Passeriformes","Australian",TRUE
+"Restless Flycatcher",0.4999,4.04,"Myiagra inquieta","Passeriformes","Australian",TRUE
+"Large-billed Scrubwren",0.5647,2.75,"Sericornis magnirostra","Passeriformes","Endemic (entirely Australian)",TRUE
+"Long-billed Corella",0.4231,2.24,"Cacatua tenuirostris","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Little Grassbird",0.5199,2.24,"Poodytes gramineus","Passeriformes","Australian",TRUE
+"Leaden Flycatcher",0.4442,5.74,"Myiagra rubecula","Passeriformes","Australian",TRUE
+"Striped Honeyeater",0.5576,3.43,"Plectorhyncha lanceolata","Passeriformes","Endemic (entirely Australian)",TRUE
+"Double-barred Finch",0.668,4.59,"Stizoptera bichenovii","Passeriformes","Endemic (entirely Australian)",TRUE
+"Tawny Frogmouth",0.2425,4.29,"Podargus strigoides","Caprimulgiformes","Endemic (entirely Australian)",TRUE
+"Green Catbird",0.5812,2.89,"Ailuroedus crassirostris","Passeriformes","Endemic (entirely Australian)",TRUE
+"Swamp Harrier",0.4726,3.62,"Circus approximans","Accipitriformes","Australian",TRUE
+"Brown Goshawk",0.1441,1.85,"Tachyspiza fasciata","Accipitriformes","Australian",TRUE
+"Shining Bronze-Cuckoo",0.3215,5.08,"Chalcites lucidus","Cuculiformes","Australian",TRUE
+"Jacky-winter",0.5823,3.4,"Microeca fascinans","Passeriformes","Australian",TRUE
+"Dusky Woodswallow",0.5521,3.75,"Artamus cyanopterus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Wedge-tailed Eagle",0.2905,2.05,"Aquila audax","Accipitriformes","Australian",TRUE
+"Australian Pipit",0.4853,2.6,"Anthus australis","Passeriformes","Unknown",TRUE
+"Black-faced Monarch",0.6343,5.82,"Monarcha melanopsis","Passeriformes","Endemic (breeding only)",TRUE
+"Osprey",0.5015,1.8,"Pandion haliaetus","Accipitriformes","Australian",TRUE
+"Rainbow Bee-eater",0.6273,5.17,"Merops ornatus","Coraciiformes","Australian",TRUE
+"Common Bronzewing",0.4734,3.52,"Phaps chalcoptera","Columbiformes","Endemic (entirely Australian)",TRUE
+"Weebill",NA,3.68,"Smicrornis brevirostris","Passeriformes","Endemic (entirely Australian)",TRUE
+"Australian Rufous Fantail",0.4977,5.98,"Rhipidura rufifrons","Passeriformes","Australian",TRUE
+"White-throated Gerygone",0.5301,5.36,"Gerygone olivacea","Passeriformes","Australian",TRUE
+"White-naped Honeyeater",0.4305,4.7,"Melithreptus lunatus","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-eared Honeyeater",0.5417,3.21,"Nesoptilotis leucotis","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-breasted Woodswallow",0.6584,5.6,"Artamus leucorynchus","Passeriformes","Australian",TRUE
+"Spiny-cheeked Honeyeater",0.7875,2.96,"Acanthagenys rufogularis","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-headed Pigeon",0.4195,3.69,"Columba leucomela","Columbiformes","Endemic (entirely Australian)",TRUE
+"Peaceful Dove",0.599,4.17,"Geopelia placida","Columbiformes","Australian",TRUE
+"Fairy Martin",0.4225,3.41,"Petrochelidon ariel","Passeriformes","Endemic (breeding only)",TRUE
+"Superb Lyrebird",0.6302,6.51,"Menura novaehollandiae","Passeriformes","Endemic (entirely Australian)",TRUE
+"Channel-billed Cuckoo",0.4701,5.02,"Scythrops novaehollandiae","Cuculiformes","Australian",TRUE
+"Scaly-breasted Lorikeet",0.5462,3.39,"Trichoglossus chlorolepidotus","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Tree Martin",0.2901,2.22,"Petrochelidon nigricans","Passeriformes","Endemic (breeding only)",TRUE
+"Black-shouldered Kite",0.2389,2.05,"Elanus axillaris","Accipitriformes","Endemic (entirely Australian)",TRUE
+"White-winged Chough",0.5998,3.18,"Corcorax melanorhamphos","Passeriformes","Endemic (entirely Australian)",TRUE
+"Golden-headed Cisticola",0.5182,2.15,"Cisticola exilis","Passeriformes","Australian",TRUE
+"Little Raven",0.7295,3.27,"Corvus mellori","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-cheeked Honeyeater",0.5562,3.82,"Phylidonyris niger","Passeriformes","Endemic (entirely Australian)",TRUE
+"Brown Honeyeater",0.6541,3.47,"Lichmera indistincta","Passeriformes","Australian",TRUE
+"Wonga Pigeon",0.4051,5.05,"Leucosarcia melanoleuca","Columbiformes","Endemic (entirely Australian)",TRUE
+"Musk Lorikeet",0.3311,3.03,"Trichoglossus concinnus","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Brown Cuckoo-Dove",0.4663,4.31,"Macropygia phasianella","Columbiformes","Australian",TRUE
+"Bell Miner",0.5393,3.78,"Manorina melanophrys","Passeriformes","Endemic (entirely Australian)",TRUE
+"Dollarbird",0.4696,5.42,"Eurystomus orientalis","Coraciiformes","Australian",TRUE
+"Australian Brushturkey",0.5079,3.39,"Alectura lathami","Galliformes","Endemic (entirely Australian)",TRUE
+"Mistletoebird",0.338,3.2,"Dicaeum hirundinaceum","Passeriformes","Endemic (entirely Australian)",TRUE
+"Blue-faced Honeyeater",0.5118,4.26,"Entomyzon cyanotis","Passeriformes","Australian",TRUE
+"Whistling Kite",0.44,3.43,"Haliastur sphenurus","Accipitriformes","Australian",TRUE
+"Nankeen Kestrel",0.2602,3.19,"Falco cenchroides","Falconiformes","Australian",TRUE
+"Scarlet Myzomela",0.3514,4.02,"Myzomela sanguinolenta","Passeriformes","Australian",TRUE
+"Red-whiskered Bulbul",0.5916,3.45,"Pycnonotus jocosus","Passeriformes","Introduced",TRUE
+"White-bellied Sea-Eagle",0.324,2.88,"Icthyophaga leucogaster","Accipitriformes","Australian",TRUE
+"Yellow-rumped Thornbill",NA,3.07,"Acanthiza chrysorrhoa","Passeriformes","Endemic (entirely Australian)",TRUE
+"Variegated Fairywren",0.3361,3.1,"Malurus lamberti","Passeriformes","Endemic (entirely Australian)",TRUE
+"Fan-tailed Cuckoo",0.2862,6.1,"Cacomantis flabelliformis","Cuculiformes","Australian",TRUE
+"Australian Reed Warbler",0.633,4.39,"Acrocephalus australis","Passeriformes","Endemic (breeding only)",TRUE
+"Striated Thornbill",0.3444,3.25,"Acanthiza lineata","Passeriformes","Endemic (entirely Australian)",TRUE
+"House Sparrow",0.4924,3.04,"Passer domesticus","Passeriformes","Introduced",TRUE
+"Eurasian Blackbird",0.4637,4.47,"Turdus merula","Passeriformes","Introduced",TRUE
+"Bar-shouldered Dove",0.4252,3.78,"Geopelia humeralis","Columbiformes","Australian",TRUE
+"Brown Gerygone",0.4992,4.04,"Gerygone mouki","Passeriformes","Endemic (entirely Australian)",TRUE
+"Torresian Crow",0.6951,3.74,"Corvus orru","Passeriformes","Australian",TRUE
+"Striated Pardalote",0.4766,4.66,"Pardalotus striatus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Pacific Koel",0.4532,5.28,"Eudynamys orientalis","Cuculiformes","Australian",TRUE
+"Red-rumped Parrot",0.6601,3.79,"Psephotus haematonotus","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Yellow-tailed Black-Cockatoo",0.205,3.32,"Zanda funerea","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Sacred Kingfisher",0.41,6.93,"Todiramphus sanctus","Coraciiformes","Australian",TRUE
+"Olive-backed Oriole",0.3144,5.15,"Oriolus sagittatus","Passeriformes","Australian",TRUE
+"New Holland Honeyeater",0.5873,4.82,"Phylidonyris novaehollandiae","Passeriformes","Endemic (entirely Australian)",TRUE
+"White-plumed Honeyeater",0.7593,3.8,"Ptilotula penicillata","Passeriformes","Endemic (entirely Australian)",TRUE
+"Australasian Figbird",0.4473,3.12,"Sphecotheres vieilloti","Passeriformes","Australian",TRUE
+"Pied Butcherbird",0.4261,2.85,"Cracticus nigrogularis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Rock Pigeon",0.5597,3.59,"Columba livia","Columbiformes","Introduced",TRUE
+"Yellow Thornbill",0.3185,3.16,"Acanthiza nana","Passeriformes","Endemic (entirely Australian)",TRUE
+"Noisy Friarbird",0.3738,5.84,"Philemon corniculatus","Passeriformes","Endemic (breeding only)",TRUE
+"Rufous Whistler",0.5222,6.75,"Pachycephala rufiventris","Passeriformes","Australian",TRUE
+"Satin Bowerbird",0.371,5.43,"Ptilonorhynchus violaceus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Australian King-Parrot",0.2345,5.69,"Alisterus scapularis","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Little Corella",0.2877,4.43,"Cacatua sanguinea","Psittaciformes","Australian",TRUE
+"Spotted Pardalote",0.361,5.59,"Pardalotus punctatus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Spotted Dove",0.4643,3.66,"Spilopelia chinensis","Columbiformes","Introduced",TRUE
+"White-throated Treecreeper",0.4595,5.91,"Cormobates leucophaea","Passeriformes","Endemic (entirely Australian)",TRUE
+"Golden Whistler",0.3541,5.98,"Pachycephala pectoralis","Passeriformes","Australian",TRUE
+"White-browed Scrubwren",0.3191,5.22,"Sericornis frontalis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Gray Shrikethrush",0.3611,5.18,"Colluricincla harmonica","Passeriformes","Australian",TRUE
+"Eastern Spinebill",0.3708,4.95,"Acanthorhynchus tenuirostris","Passeriformes","Endemic (entirely Australian)",TRUE
+"Eastern Rosella",0.3331,3.84,"Platycercus eximius","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Silvereye",0.2072,5.13,"Zosterops lateralis","Passeriformes","Australian",TRUE
+"Little Wattlebird",0.418,4.44,"Anthochaera chrysoptera","Passeriformes","Endemic (entirely Australian)",TRUE
+"Brown Thornbill",0.309,4.19,"Acanthiza pusilla","Passeriformes","Endemic (entirely Australian)",TRUE
+"Yellow-faced Honeyeater",NA,7.34,"Caligavis chrysops","Passeriformes","Endemic (entirely Australian)",TRUE
+"Black-faced Cuckooshrike",0.2238,4.43,"Coracina novaehollandiae","Passeriformes","Australian",TRUE
+"Crimson Rosella",0.4301,5.79,"Platycercus elegans","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Eastern Whipbird",0.3967,6.17,"Psophodes olivaceus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Eastern Yellow Robin",0.3566,5.63,"Eopsaltria australis","Passeriformes","Endemic (entirely Australian)",TRUE
+"Lewin's Honeyeater",0.4744,6.51,"Meliphaga lewinii","Passeriformes","Endemic (entirely Australian)",TRUE
+"Red Wattlebird",0.3246,5.33,"Anthochaera carunculata","Passeriformes","Endemic (entirely Australian)",TRUE
+"Crested Pigeon",0.3102,4.65,"Ocyphaps lophotes","Columbiformes","Endemic (entirely Australian)",TRUE
+"Gray Butcherbird",0.2534,6.06,"Cracticus torquatus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Galah",0.3069,4.73,"Eolophus roseicapilla","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Gray Fantail",NA,5.64,"Rhipidura albiscapa","Passeriformes","Unknown",TRUE
+"Sulphur-crested Cockatoo",0.2729,6.71,"Cacatua galerita","Psittaciformes","Australian",TRUE
+"Pied Currawong",0.2134,6.62,"Strepera graculina","Passeriformes","Endemic (entirely Australian)",TRUE
+"Laughing Kookaburra",NA,5.93,"Dacelo novaeguineae","Coraciiformes","Endemic (entirely Australian)",TRUE
+"Willie-wagtail",0.3516,3.55,"Rhipidura leucophrys","Passeriformes","Australian",TRUE
+"Superb Fairywren",0.2434,5.95,"Malurus cyaneus","Passeriformes","Endemic (entirely Australian)",TRUE
+"Australian Raven",0.2898,5.81,"Corvus coronoides","Passeriformes","Endemic (entirely Australian)",TRUE
+"Welcome Swallow",0.1619,3.19,"Hirundo neoxena","Passeriformes","Endemic (breeding only)",TRUE
+"Noisy Miner",0.2614,6.42,"Manorina melanocephala","Passeriformes","Endemic (entirely Australian)",TRUE
+"Magpie-lark",0.329,5.38,"Grallina cyanoleuca","Passeriformes","Australian",TRUE
+"Rainbow Lorikeet",0.3849,7.2,"Trichoglossus moluccanus","Psittaciformes","Endemic (entirely Australian)",TRUE
+"Australian Magpie",0.2247,6.07,"Gymnorhina tibicen","Passeriformes","Australian",TRUE

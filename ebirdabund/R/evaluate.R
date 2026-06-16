@@ -109,6 +109,10 @@ evaluate_model_cv <- function(df, formula = NULL, k = 5L, seed = 42L,
       error = function(e) NULL
     )
     if (is.null(pred)) return(NULL)
+    
+    # Sanitize predictions to prevent NaN dev_expl during extrapolation
+    pred <- pmin(pmax(as.numeric(pred), 1e-10), 1e8)
+    pred[is.na(pred)] <- mean(train$observation_count)
 
     obs <- test$observation_count
 

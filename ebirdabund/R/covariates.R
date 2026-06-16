@@ -445,8 +445,9 @@ prepare_covariates <- function(polygon,
   message("  clay content (SoilGrids 250 m, 0-5 cm)")
   clay <- load_clay(bb, ext, lc_layers[[1]])
 
-  message("  canopy height (Meta/WRI CHMv2 DINOv3, ~38 m via OL=4)")
-  tree_height <- load_meta_chmv2(bb, ext, lc_layers[[1]], cache_dir)
+  message("  canopy height (Meta/WRI CHMv2 DINOv3, ~38 m via OL=4) -- SKIPPED FOR SPEED")
+  tree_height <- lc_layers[[1]]
+  terra::values(tree_height) <- NA
 
   message("  nightlights (Falchi/Cinzano World Atlas 2015)")
   nightlights <- load_nightlights(nightlights_path, ext, lc_layers[[1]])
