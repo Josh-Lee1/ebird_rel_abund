@@ -1,6 +1,6 @@
 # Vegetation Functional Diversity and Bird Abundance in New South Wales
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20739641.svg)](https://doi.org/10.5281/zenodo.20739641)
 
 **How do vegetation functional diversity, functional identity, structural complexity and taxonomic diversity explain bird relative abundance across NSW, Australia?**
 
@@ -93,10 +93,10 @@ The four final publication figures are produced by the scripts listed, reading f
 
 ### 🗄️ Large data files — available on Zenodo
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20739641.svg)](https://doi.org/10.5281/zenodo.20739641)
 
 Data files too large for GitHub are archived on Zenodo at:
-**https://doi.org/10.5281/zenodo.XXXXXXX**
+**https://doi.org/10.5281/zenodo.20739641**
 
 | File | Size | Description |
 |------|------|-------------|
